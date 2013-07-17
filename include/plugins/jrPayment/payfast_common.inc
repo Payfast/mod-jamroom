@@ -151,9 +151,14 @@ function pfValidSignature( $pfData = null, &$pfParamString = null )
     // Dump the submitted variables and calculate security signature
     foreach( $pfData as $key => $val )
     {
-    	if( $key != 'signature' ){
-    		$pfParamString .= $key .'='. urlencode( $val ) .'&';
-            }
+    	if( $key != 'signature' )
+        {
+            $pfParamString .= $key .'='. urlencode( $val ) .'&';
+        }
+        else
+        {
+            break;
+        }
     }
 
     // Remove the last '&' from the parameter string
