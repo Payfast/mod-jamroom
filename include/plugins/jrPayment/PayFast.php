@@ -400,7 +400,7 @@ function jrPayment_PayFast_payout($_data)
              jmLogger(0,'CRI',"jrPayment_PayFast_payout() band_id {$_band['band_id']} has band_balance larger than allowed ({$limit}): {$_band['band_balance']}");
              continue;
          }
-         $out .= "{$_band['band_payment_email']},". jrPaymentNumberFormat($_band['band_balance']) .",{$config['vault_currency']},=HYPERLINK(\"https://www.payfast.local/eng/process?cmd=_paynow&receiver=".urlencode($_band['band_payment_email'])."&item_name=Sales&amount=". jrPaymentNumberFormat($_band['band_balance']) ."\")\n";
+         $out .= "{$_band['band_payment_email']},". jrPaymentNumberFormat($_band['band_balance']) .",{$config['vault_currency']},=HYPERLINK(\"https://www.payfast.co.za/eng/process?cmd=_paynow&receiver=".urlencode($_band['band_payment_email'])."&item_name=Sales&amount=". jrPaymentNumberFormat($_band['band_balance']) ."\")\n";
          
           
 
@@ -509,7 +509,7 @@ function jrPayment_PayFast_validate(&$_args)
             $pfError = false;
             $pfErrMsg = '';
             $pfDone = false;
-            $pfData = array();	   
+            $pfData = array();     
             $pfParamString = '';
         
             pflog( 'PayFast ITN call received' );
