@@ -295,7 +295,7 @@ function jrPayment_PayFast_checkout($_data)
     $secureString = substr( $secureString, 0, -1 );
     $md5 = md5($secureString);    
     $url = $burl .'/eng/process?'.$secureString;
-    $url .= '&signature='.$md5;  
+    $url .= '&signature='.$md5.'&user_agent=Jamroom 4.3.x';
     // And forward our user over to checkout
     header('Location: '. $url);
     exit;
