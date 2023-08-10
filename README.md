@@ -1,5 +1,4 @@
-mod-jamroom
-===========
+# mod-jamroom
 
 PayFast Jamroom Module v1.0.0 for Jamroom v4.3.0
 --------------------------------------------------------------
@@ -26,10 +25,4 @@ Installation:-
 - Username: sbtu01@payfast.co.za
 - Password: clientpass
 
-******************************************************************************
-
-    Please see the URL below for all information concerning this module:
-
-           https://www.payfast.co.za/shopping-carts/jamroom/
-
-******************************************************************************
+Please [click here](https://payfast.io/integration/shopping-carts/jamroom/) for more information concerning this module.
